@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Balance from './components/Balance';
+import IncomeAndExpenses from './components/IncomeAndExpenses';
+import Title from './components/Title';
+import History from './components/History';
+import FormInputs from './components/FormInputs';
+import IncAndExpContextProvider from './context/IncAndExpContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+
+    return (
+        <React.Fragment>
+            <Title />
+            <div className='container'>
+                <IncAndExpContextProvider>
+                    <Balance />
+                    <IncomeAndExpenses />
+                    <History />
+                    <FormInputs />
+                </IncAndExpContextProvider>
+            </div>
+        </React.Fragment>
+    );
+};
 
 export default App;
