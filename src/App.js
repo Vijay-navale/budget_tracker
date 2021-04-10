@@ -11,7 +11,7 @@ const App = () => {
 
     return (
         <React.Fragment>
-            <Title />
+            <Title /> 
             <div className='container'>
                 <IncAndExpContextProvider>
                     <Balance />

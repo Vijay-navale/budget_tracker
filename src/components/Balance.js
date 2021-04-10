@@ -6,7 +6,7 @@ const Balance = () => {
     return (
         <React.Fragment>
             <h4>Your Balance</h4>
-            <h1 id='balance'>${totalBalance()}</h1>
+            <h1 id='balance'>Rs {totalBalance()}</h1>
         </React.Fragment>
     );
 }

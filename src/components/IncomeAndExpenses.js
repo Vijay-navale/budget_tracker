@@ -9,13 +9,13 @@ const IncomeAndExpenses = () => {
             <div>
                 <h4>Income</h4>
                 <p id='money-plus' className='money plus'>
-                    ${getPlusSum()}
+                    Rs{getPlusSum()}
                 </p>
             </div>
             <div>
                 <h4>Expense</h4>
                 <p id='money-minus' className='money minus'>
-                    ${getMinusSum()}
+                    Rs{getMinusSum()}
                 </p>
             </div>
         </div>
